@@ -13,6 +13,10 @@ from transformers import (
 )
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 
+# Create required directories
+os.makedirs("offload_folder", exist_ok=True)
+os.makedirs("deepseek-tucuiricuc", exist_ok=True)
+
 # Load the dataset
 def load_dataset(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -61,6 +65,7 @@ def main():
         device = torch.device("cpu")
         print("Using CPU (MPS not available)")
     
+    '''
     # Configure BitsAndBytes for quantization
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
@@ -68,15 +73,17 @@ def main():
         bnb_4bit_quant_type="nf4",
         bnb_4bit_compute_dtype=torch.float16
     )
-    
+    '''
     # Load base model
     model_id = "deepseek-ai/deepseek-llm-7b-base"
     print(f"Loading model {model_id}...")
     tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
     model = AutoModelForCausalLM.from_pretrained(
         model_id,
-        quantization_config=bnb_config,
+        # quantization_config=bnb_config,
         device_map="auto",  # Will use MPS if available
+        offload_folder="offload_folder",  # Added offload folder
+        torch_dtype=torch.float16,  # Use half precision
         trust_remote_code=True
     )
     

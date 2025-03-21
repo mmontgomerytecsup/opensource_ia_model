@@ -1,10 +1,10 @@
 # Form 2
 
 ### 1.- Create data
-Modelfile_model
+Modelfile_custom
 
 ### 2.- Create custom model
-ollama create custom-model-form-2 -f Modelfile_model
+ollama create custom-model-form-2 -f Modelfile_custom
 
 ### 3.- Test Model
 ollama run custom-deepseek-form-2

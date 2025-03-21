@@ -5,7 +5,7 @@ python3 -m venv env
 source env/bin/activate
 
 ## Install
-pip install torch transformers datasets accelerate peft bitsandbytes tqdm safetensors
+pip install torch transformers datasets accelerate peft bitsandbytes tqdm safetensors dotenv
 
 ## Step
 
@@ -26,3 +26,9 @@ ollama run custom-llama-form-1
 
 ### 6.- Example
 ¿Qué es un Tucuirícuc?
+
+
+ File "/home/appserver/research/deepseek/llama/form_1/env/lib/python3.12/site-packages/transformers/utils/hub.py", line 456, in cached_files
+    raise EnvironmentError(
+OSError: meta-llama/Llama-3-8b is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`

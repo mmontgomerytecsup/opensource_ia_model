@@ -12,6 +12,10 @@ from transformers import (
 )
 from peft import LoraConfig, get_peft_model
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 # Create required directories
 os.makedirs("offload_folder", exist_ok=True)
 os.makedirs("llama-custom", exist_ok=True)

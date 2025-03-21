@@ -1,9 +1,11 @@
-# There are two form to create a custom model 
+# Customise model with Deepseek
 
-## Form 1 
+### There are two way to create a custom model with Deepseek 
+
+#### Form 1 
 form_1/README.md
 
-## Form 2
+#### Form 2
 form_2/README.md
 
 

@@ -16,6 +16,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+print("HF_TOKEN  = " + os.environ.get("HF_TOKEN") )
+
 # Create required directories
 os.makedirs("offload_folder", exist_ok=True)
 os.makedirs("llama-custom", exist_ok=True)

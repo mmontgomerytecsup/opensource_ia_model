@@ -15,7 +15,7 @@ from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 
 # Create required directories
 os.makedirs("offload_folder", exist_ok=True)
-os.makedirs("deepseek-tucuiricuc", exist_ok=True)
+os.makedirs("deepseek-custom", exist_ok=True)
 
 # Load the dataset
 def load_dataset(file_path):
@@ -110,12 +110,12 @@ def main():
     
     # Load and preprocess dataset
     print("Loading and preprocessing dataset...")
-    dataset = load_dataset("tucuiricuc_dataset.json")
+    dataset = load_dataset("custom_dataset.json")
     tokenized_dataset = dataset.map(preprocess_function, batched=True)
     
     # Set training parameters - smaller batches for MacBook
     training_args = TrainingArguments(
-        output_dir="./deepseek-tucuiricuc",
+        output_dir="./deepseek-custom",
         num_train_epochs=10,
         per_device_train_batch_size=1,
         gradient_accumulation_steps=8,
@@ -146,8 +146,8 @@ def main():
     
     # Save the model
     print("Saving model...")
-    trainer.save_model("./deepseek-tucuiricuc-final")
-    tokenizer.save_pretrained("./deepseek-tucuiricuc-final")
+    trainer.save_model("./deepseek-custom-final")
+    tokenizer.save_pretrained("./deepseek-custom-final")
     
     print("Fine-tuning complete!")
 

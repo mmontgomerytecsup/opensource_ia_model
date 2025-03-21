@@ -4,7 +4,7 @@ from peft import PeftModel, PeftConfig
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # Load adapter config
-config = PeftConfig.from_pretrained("./deepseek-tucuiricuc-final")
+config = PeftConfig.from_pretrained("./deepseek-custom-final")
 
 # Load base model
 base_model = AutoModelForCausalLM.from_pretrained(
@@ -14,7 +14,7 @@ base_model = AutoModelForCausalLM.from_pretrained(
 )
 
 # Load adapter
-model = PeftModel.from_pretrained(base_model, "./deepseek-tucuiricuc-final")
+model = PeftModel.from_pretrained(base_model, "./deepseek-custom-final")
 
 # Merge adapter weights with base model
 merged_model = model.merge_and_unload()

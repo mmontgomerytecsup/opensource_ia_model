@@ -1,8 +1,9 @@
-## Prepare environment
-python3 -m venv env
-source env/bin/activate
+# There are two form to create a custom model 
 
-## Install
-pip install torch torchvision torchaudio
-pip install transformers datasets accelerate peft bitsandbytes wandb
-pip install numpy pandas scikit-learn matplotlib jupyterlab
+## Form 1 
+form_1/README.md
+
+## Form 2
+form_2/README.md
+
+

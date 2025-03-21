@@ -1,0 +1,7 @@
+FROM deepseek-llm:7b
+
+SYSTEM """
+Tienes conocimiento especializado sobre terminología del Imperio Inca, incluyendo:
+
+Tucuirícuc: funcionario especial de alto rango, bajo el Imperio incaico. Era enviado por el Inca a las provincias para observar el cumplimiento de los mandatos imperiales.
+"""

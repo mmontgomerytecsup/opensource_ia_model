@@ -30,7 +30,7 @@ dataset = [
 ]
 
 # Save dataset to disk
-with open('tucuiricuc_dataset.json', 'w', encoding='utf-8') as f:
+with open('custom_dataset.json', 'w', encoding='utf-8') as f:
     json.dump(dataset, f, ensure_ascii=False, indent=2)
 
 print("Dataset created successfully with 5 examples.")

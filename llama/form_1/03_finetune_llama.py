@@ -76,7 +76,8 @@ def main():
         device_map="auto",
         offload_folder="offload_folder",  # Added offload folder
         torch_dtype=torch.float16,  # Use half precision
-        trust_remote_code=True
+        trust_remote_code=True,
+        token="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"  # Add this line
     )
     
     # Configure LoRA - using minimal settings for MacBook

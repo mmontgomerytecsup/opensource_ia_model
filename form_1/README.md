@@ -11,11 +11,11 @@ pip install numpy pandas scikit-learn matplotlib jupyterlab
 
 ## Step
 
-### 1.- Create data set 
-python 02_create_dataset.py
+### 1.- Enviroment test (optional) 
+python 01_test_setup.py
 
-### 2.- Run the Fine-tuning
-python 03_finetune_deepseek.py
+### 2.- Create data set 
+python 02_create_dataset.py
 
 ### 3.- Run the Fine-tuning
 python 03_finetune_deepseek.py

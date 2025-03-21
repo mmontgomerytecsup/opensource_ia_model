@@ -5,7 +5,7 @@ python3 -m venv env
 source env/bin/activate
 
 ## Install
-pip install torch transformers datasets accelerate peft bitsandbytes tqdm safetensors dotenv
+pip install torch transformers datasets accelerate peft bitsandbytes tqdm safetensors python-dotenv
 
 ## Step
 

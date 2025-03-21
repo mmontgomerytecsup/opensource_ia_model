@@ -1,4 +1,4 @@
-# Customise model with Deepseek
+# Custom model with Deepseek
 
 ### There are two way to create a custom model with Deepseek 
 

@@ -65,7 +65,8 @@ def main():
         print("Using CPU (MPS not available)")
     
     # Load base model - using smaller model for MacBook compatibility
-    model_id = "meta-llama/Llama-3-8b"  # Or use "meta-llama/Llama-2-7b" if you have access
+    #model_id = "meta-llama/Llama-3-8b"  # Or use "meta-llama/Llama-2-7b" if you have access
+    model_id = "meta-llama/Llama-2-7b-hf"
     print(f"Loading model {model_id}...")
     
     tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)

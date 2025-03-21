@@ -23,7 +23,10 @@ python 03_finetune_deepseek.py
 ### 4.- Export to Ollama Format
 mkdir -p ollama_model
 python 04_convert_to_ollama.py
-ollama create custom-deepseek -f 05_Modelfile_custom
+ollama create custom-deepseek-form-1 -f 05_Modelfile_custom
 
 ### 5.- Test Model
-ollama run custom-deepseek
+ollama run custom-deepseek-form-1
+
+### 6.- Example
+Que es un Tucuiricuc?

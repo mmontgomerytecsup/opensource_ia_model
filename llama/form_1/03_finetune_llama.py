@@ -81,7 +81,7 @@ def main():
         offload_folder="offload_folder",  # Added offload folder
         torch_dtype=torch.float16,  # Use half precision
         trust_remote_code=True,
-        tokenn = os.environ.get("HF_TOKEN")  # Add this line
+        abc = os.environ.get("HF_TOKEN")  # Add this line
     )
     
     # Configure LoRA - using minimal settings for MacBook

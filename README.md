@@ -19,3 +19,13 @@ llama/form_1/README.md
 
 #### Form 2
 llama/form_2/README.md
+
+## Mistral
+
+### There are two ways to create a custom model with Llama 
+
+#### Form 1 
+mistral/form_1/README.md
+
+#### Form 2
+mistral/form_2/README.md

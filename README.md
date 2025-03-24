@@ -22,7 +22,7 @@ llama/form_2/README.md
 
 ## Mistral
 
-### There are two ways to create a custom model with Llama 
+### There are two ways to create a custom model with Mistral 
 
 #### Form 1 : Fine tuning --> TO DO
 mistral/form_1/README.md

@@ -1,6 +1,6 @@
-# Custom model with Deepseek
+# Custom open source IA model 
 
-## Deepseek
+## Deepseek 
 
 ### There are two ways to create a custom model with Deepseek 
 
@@ -10,7 +10,7 @@ deepseek/form_1/README.md
 #### Form 2 : ModelFile Format
 deepseek/form_2/README.md
 
-## Llama
+## Llama ( no opensource)
 
 ### There are two ways to create a custom model with Llama 
 

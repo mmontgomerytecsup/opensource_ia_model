@@ -4,7 +4,7 @@
 
 ### There are two ways to create a custom model with Deepseek 
 
-#### Form 1 : Fine tuning --> Done
+#### Form 1 : Fine tuning --> DONE
 deepseek/form_1/README.md
 
 #### Form 2 : ModelFile Format

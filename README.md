@@ -2,7 +2,7 @@
 
 ## Deepseek 
 
-### There are two ways to create a custom model with Deepseek 
+### There are two ways to create a custom ia model with Deepseek 
 
 #### Form 1 : Fine tuning --> DONE
 deepseek/form_1/README.md
@@ -12,7 +12,7 @@ deepseek/form_2/README.md
 
 ## Llama ( no opensource)
 
-### There are two ways to create a custom model with Llama 
+### There are two ways to create a custom ia model with Llama 
 
 #### Form 1 : Fine tuning --> TO DO
 llama/form_1/README.md
@@ -22,7 +22,7 @@ llama/form_2/README.md
 
 ## Mistral
 
-### There are two ways to create a custom model with Mistral 
+### There are two ways to create a custom ia model with Mistral 
 
 #### Form 1 : Fine tuning --> TO DO
 mistral/form_1/README.md
